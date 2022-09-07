@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(65, 57, 57);
+}
+h1{
+    color:rgb(68, 106, 177) ;
+    font-size: 80px;  
+}
+h2{
+    font-family: serif;
+    color:rgb(134, 157, 201) ;
+    
+}
+span{
+    color: yellow;
+}
+ul,ol,p{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+}
+a{
+    color: rgba(187, 53, 59, 0.8);
+    font-family: inherit;
+}
