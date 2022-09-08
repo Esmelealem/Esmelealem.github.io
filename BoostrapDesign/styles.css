@@ -1,0 +1,55 @@
+/* Esmelealem Mihretu */
+#header{
+    background-color: cadetblue;  
+    text-align: center;
+}
+
+* {
+    margin: 0 !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    background-color: darkslategray;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
+#nav > li{
+    padding: 1em;
+  border-right:1px solid black;
+}
+
+#footer{
+    background-color: darkslategrey;   
+    height: 2.3em;
+    text-align: center;
+}
+  
+#column{
+    width: 100%;
+    height: 300px;
+    }
+    #Column1{
+        background-color: rgb(87, 86, 86);
+    }
+    #Column2{
+        background-color: rgb(134, 131, 131);
+    }
+    #Column3{       
+        background-color: rgb(180, 176, 176);
+    }
+
+    @media screen and (max-width: 600px) {
+        #Column2 {
+            order: 1;
+            width: 100%;
+        }
+    }
+
+    
