@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div  {
+            border: 1px solid black;
+        }
+
+        #a {
+            width: 1000px;
+            height: 500px;
+            position: relative;
+        }
+
+        #b {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #c {
+            position: absolute;
+            right: 0;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #right {
+            margin-left: 5px;
+        }
+
+        input[type="text"] {
+           font-family: monospace;
+           padding: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="a">This is from a
+        <div id="b">This is from b
+            <div id="c">This is from c</div>
+        </div>
+        <div id="d">This is from d</div>
+    </div>
+    <form>
+        <fieldset>
+            <legend>Info</legend>
+            <label for="Firts Name">F:</label>
+            <input/>
+            <label for="Last Name">Last name:</label>
+            <input type="text"/>
+           <select name="" id="">
+               <option value="" selected>Op1</option>
+               <option value="">op2</option> 
+               <option value="">op2</option> 
+               <option value="">op4</option> 
+           </select>
+            
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>Info</legend>
+        <form action="">
+            <div id="container">
+                <div id="left">
+                    <label for="fName">First Name:</label> <br>
+                    <label for="fName">Last Name:</label> <br>
+                    <label for="fName">Favorite Food:</label> <br>
+                </div>
+                <div id="right">
+                    <input type="text"> <br>
+                    <input type="text"> <br>
+                    <select name="" id="">
+                        <option value="0">Burger</option>
+                        <option value="1">Ice Cream</option>
+                        <option value="2">Injera</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
