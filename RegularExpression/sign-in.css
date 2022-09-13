@@ -1,0 +1,52 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+label {
+    display: block;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    margin-top: 7px;
+    width: 90%;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(165, 163, 163);
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+input[type="password"]{
+    margin-top: 7px;
+    width: 90%;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(165, 163, 163);
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+p {
+    font-size: 18px;
+    color: rgb(165, 163, 163);
+
+}
+
+.btn-blue {
+    background-color: rgba(30, 121, 240, 0.788);
+    font-size: 22px;
+    color: white;
+    border: 1px solid rgba(30, 121, 240, 0.788);
+    padding: 15px;
+    border-radius: 7px;
+}
