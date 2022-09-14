@@ -19,7 +19,7 @@ legend {
 }
 article{
     /* alignment-adjust: central; */
-    align-items: central;
+    align-items: center;
 }
 button{
     width: 47%;
