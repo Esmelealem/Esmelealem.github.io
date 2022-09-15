@@ -20,14 +20,14 @@ function pageLoad() {
       document.getElementById('circle').style.borderRadius = radius + 'px';
       radius += growthAmount;
     }, interval);
-    setInterval(function () {
-      for (let i = 0; i < numbers.length; i++) {
-        document.getElementById('circle').style.width = radius + 'px';
-        document.getElementById('circle').style.height = radius + 'px';
-        document.getElementById('circle').style.borderRadius = radius + 'px';
-        radius += growthAmount; 
-      }  
-    }, interval);
+    // setInterval(function () {
+    //   for (let i = 0; i < numbers.length; i++) {
+    //     document.getElementById('circle').style.width = radius + 'px';
+    //     document.getElementById('circle').style.height = radius + 'px';
+    //     document.getElementById('circle').style.borderRadius = radius + 'px';
+    //     radius += growthAmount; 
+    //   }  
+    // }, interval);
 
     let circle = document.getElementById('circle');
     circle.addEventListener('click', () => {
