@@ -23,13 +23,10 @@ class Bank {
     return savingAccount;
   }
   addCheckingsAccount(overdraft) {
-    const checkingAccount = new CheckingAccount(
-      Bank.generateAccountNumber(),
-      overdraft
-    );
+    const checkingAccount = new CheckingAccount(Bank.generateAccountNumber(), overdraft);
     this.accounts.push(checkingAccount);
     return checkingAccount;
-  }
+    }
   AccountReport() {
     return (
       "SavingsAccount: " +

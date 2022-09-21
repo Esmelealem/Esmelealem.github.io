@@ -1,6 +1,6 @@
 class CheckingAccount extends Account {
-  constructor(balance,overdraft) {
-    super(balance);
+  constructor(number,overdraft) {
+    super(number);
     this._overdraft = overdraft;
   }
   getOverDraft() {

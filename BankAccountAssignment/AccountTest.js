@@ -10,8 +10,8 @@ let savingAccount = new SavingsAccount(102,20);
 let savingAccount2 = new SavingsAccount(102,20);
 savingAccount2.setInterest(20);
 
-let checkingAccount = new CheckingAccount(125,500);
-let checkingAccount2 = new CheckingAccount(125,200);
+let checkingAccount = new CheckingAccount(125,5000);
+let checkingAccount2 = new CheckingAccount(125,5000);
 
 let bankAccount = new Bank();
 bankAccount.addAccount();
@@ -62,12 +62,12 @@ function tester(){
     
     });
     describe("Checking Account Number Creation", function(){
-        it('Creates Saving Account number with number 107 ', function(){
+        it('Creates checking Account number with number 107 ', function(){
                 assert.equal(checkingAccount.getNumber(),125);
                 assert.equal(checkingAccount.getOverDraft(),5000);
         });
         it('Add an Interest rate into the account number 102', function(){
-            assert.equal(checkingAccount2.getOverDraft(),200);
+            assert.equal(checkingAccount2.getOverDraft(),5000);
         });
         it("Sets an interest ito the account number ", function(){
             assert.equal(checkingAccount.getOverDraft(), 5000);

@@ -1,0 +1,6 @@
+For the report assignment, I tried to comment on each exercise files and  have learnt a lot form each of the follwoing.
+1. When we extend a class, we don't define the attributes that are found in the super class.
+2. We can reuse the variables and methods from the super class.
+3. we have to use super method method under contructor to define each variable of the super class.
+4. In the clock class, the solution on the site(Book) is not working and I have solved this issue using different logic.
+
