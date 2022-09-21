@@ -1,12 +1,12 @@
 class CheckingAccount extends Account {
-  constructor(number,overdraft) {
-    super(number);
-    this._overdraft = 5000;
+  constructor(balance,overdraft) {
+    super(balance);
+    this._overdraft = overdraft;
   }
-  get overDraft() {
+  getOverDraft() {
     return this.overDraft;
   }
-  set overDraft(amount) {
+  setOverDraft(amount) {
     if (this.withdraw < this._balance) 
     this.overDraft = -amount;
   }
@@ -14,13 +14,24 @@ class CheckingAccount extends Account {
    * 
    * @param {amount} amount 
    */
-  withdraw(amount){
-    if (amount >= this._overDraft) {
-      throw new RangeError("Withdraw amount has reached your overdraft limit, You can't withdraw any more.");
+   withdraw(amount) {
+    if (super.balance - amount > this.overdraftLimit) {
+      throw new RangeError('Overdraft Limit Succeeded');
+    } else {
+      super.withdraw(amount);
+    }
   }
-  if (amount === 0 ) {
-      throw Error("You can withdraw upto your overdraft limit funds!");
+  toString() {
+    return (
+      'Checking Account' +
+      super.getNumber() +
+      ': OverDraft Limit is ' +
+      this._overdraftLimit
+    );
   }
-  this.getBalance() -= amount;      
-  }
+  endOfMonth() {
+    if(super.getBalance() < 0){
+        return "Warning, low balance CheckingAccount " +super.getNumber() + " :balance " + super.getBalance() + " Overdraft limit : " + this._overdraftLimit; 
+    }
+}
 }
